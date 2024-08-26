@@ -17,7 +17,7 @@ const UpdateBlog = () => {
   
   const getBlogDetails= async()=>{
     try {
-        const response = await axios.get(`http://localhost:5000/posts/${id}`);
+        const response = await axios.get(`${BackendPath}/posts/${id}`);
         console.log(response.data.MyPost);
         SetBlog(response.data.MyPost);
         SetInputs({
