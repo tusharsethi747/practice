@@ -16,6 +16,15 @@ const app=express();
 app.use(express.json());
 app.use(cors());
 
+app.get('/', async(req,res)=>{
+    try{
+        return res.status(200).send(`working good `)
+    }
+    catch(error){
+        console.log(error);
+    }
+})
+
 app.post('/signup',async (req,res)=>{
     try{
         const UsernameCheck=await Users.findOne({username:req.body.username});
