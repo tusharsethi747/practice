@@ -1,0 +1,159 @@
+.app-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Adjust according to your navbar's height */
+   /* Adjust to match your navbar’s background */
+}
+
+.sidebar {
+  position: fixed;
+  top: 80px; /* Same as navbar height */
+  left: 0;
+  width: 80px; /* Adjust according to your sidebar's width */
+  height: calc(100vh - 80px); /* Full height minus navbar */
+  background-color: white !important; /* Adjust to match your sidebar’s background */
+  /* z-index: 1000; */
+  margin-top: 30px;
+  
+}
+
+.content {
+  margin-left: 81px; /* Same as sidebar width */
+  width: calc(100vw - 80px); /* Full width minus sidebar */
+  overflow-y: auto; /* Add scrolling if content overflows */
+  background-color: #f5f5f5; /* Adjust to match your content background */
+  z-index: 1000;
+  padding-left: 10px;
+  border-top-left-radius: 30px;
+}
+.sidebarCollapsed{
+  background-color: white !important;
+  z-index: 0;
+  margin-left: 180px;
+}
+
+
+.PostBlog{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin: 20px;
+  height: 100vh;
+  flex-direction: column;
+}
+.FormContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px;
+  flex-direction: row;
+}
+.formDiv1{
+  display: flex;
+  flex-direction:column;
+  gap: 10px;
+  margin-right: 10px;
+}
+.ShowBlogContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  gap: 20px;
+}
+.BlogHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.BelowTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+.publishInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ReadInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.TitleImage{
+  height: 200px;
+}
+.BlogContentContainer{
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+}
+.BlogContent{
+  padding: 16px;
+}
+.UserPostsCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.AllPostsContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.LoginHeader{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  justify-content: center;
+}
+.LoginFormContainer{
+  display: flex;
+  margin-left: 50px;
+}
+.LoginForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  min-width: 450px;
+}
+.UserContainer{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.CardIcons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.GreetImage{
+  margin: 30px;
+  border-radius: 15px;
+}
+.ImageLogin{
+  border-radius: 20px;
+  height: 400px;
+}
