@@ -35,13 +35,13 @@ app.post('/signup',async (req,res)=>{
             password:HashedPassword
         }
         const UserCreated=await Users.create(NewUser);
-        const UserPayload={
+        const PayLoad={
             username:req.body.username,
             email:req.body.email,
             id:UserCreated._id
         }
-        const token=CreateToken({UserPayload});
-        return res.status(200).json({user:UserCreated,token:token,msg:`user created successfully !!`})
+        const token=CreateToken({PayLoad});
+        return res.status(200).json({user:UserCreated,token:token,Payload:PayLoad,msg:`user created successfully !!`})
     }
     catch(error){
         console.log(`error occured !! `);
