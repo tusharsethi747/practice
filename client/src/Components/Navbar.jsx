@@ -45,6 +45,9 @@ const Navbar = () => {
   const handleLogIn=()=>{
     navigate('/login');
   }
+  const handleCreate=()=>{
+    navigate('/post');
+  }
   return (
     <div >
       <AppBar 
@@ -75,6 +78,11 @@ const Navbar = () => {
           </Typography>
 
           <Box sx={{display:"flex" , justifyContent:"space-around" }}>
+          <Button sx={{ display:"flex", justifyContent:"center",alignItems:"center",margin:"3px",color:"grey",fontWeight:"600", fontSize:"15px", borderColor:"grey", borderStyle:"solid",borderWidth:"3px",borderRadius:"40px" , paddingLeft:"12px",paddingRight:"12px",":hover":{backgroundColor:"purple", color:"white"}}}
+            onClick={handleCreate}
+            >
+              Create Blog
+            </Button>
             <Button sx={{ display:"flex", justifyContent:"center",alignItems:"center",margin:"3px",color:"grey",fontWeight:"600", fontSize:"15px", borderColor:"grey", borderStyle:"solid",borderWidth:"3px",borderRadius:"40px" , paddingLeft:"12px",paddingRight:"12px",":hover":{backgroundColor:"purple", color:"white"}}}
             onClick={handleLogIn}
             >
